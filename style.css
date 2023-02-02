@@ -1,0 +1,273 @@
+:root {
+  --white: #FFFFFF;
+  --dark: #1D1C1C;
+  --card: #F6F2EF;
+  --accent-magenta: #FF5678;
+  --accent-green: #149770;
+  --text-secondary: #787878;
+}
+
+h1, h2 {
+ font-family: 'Nunito', sans-serif;
+}
+
+p, a {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* Add styles here */
+
+
+/* ----- navigation bar ----- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+
+.nav-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.nav-item {
+  margin: 15px;
+}
+
+.nav-btn {
+  background-color: var(--accent-magenta);
+  color: var(--white);
+  font-family: 'Nunito Sans';
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 24px;
+  width: 70;
+  height: 16;
+  border: none;
+  padding: 8px 25px 8px 25px;
+  letter-spacing: 3px;
+  line-height: 24px;
+  
+}
+
+/* ----- banner ----- */
+
+.banner {
+  display: flex;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  
+}
+
+.banner-left {
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  
+}
+
+.banner-right {
+  float: right;
+}
+
+.banner-title {
+  font-size: 88px;
+  font-weight: bolder;  
+}
+
+.subtitle {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 15px 0 40px 0;  
+}
+
+ /* Search-bar containts both an input and button*/
+
+.search-bar {
+  display: flex;
+  
+}
+
+
+.banner-input {
+  width: 346px;
+  height: 34px;
+  border-radius: 16px;
+  border: none;
+  background-color: var(--card);
+  font-size: 20px;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+
+.banner-button {
+  background-color: var(--accent-magenta);
+  border: none;
+  border-radius: 40px;
+  width: 62px;
+  height: 62px;
+  
+}
+
+.illustration {
+  width: 679px;
+  height: 544px;
+ 
+  
+}
+
+.main-container {
+  marign: 20px 0 20px 0;
+  
+}
+
+/* ----- about section ----- */
+
+.about {
+  padding: 100px 0 100px 0;
+  border-top: 2px solid var(--dark);
+  border-bottom: 2px solid var(--dark);
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.about-text {
+  font-weight: lighter;
+  line-height: 32px;
+}
+
+.address {
+  color: var(--accent-magenta);
+}
+
+/* ----- Special offers ----- */
+
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  margin-bottom: 120px;
+}
+ 
+
+.special-offer-title {
+  font-size: 48px;
+  font-weight: 800;
+  padding: 80px 0 20px 0;
+  
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 20px 12px 0px;
+  
+  background-color: var(--card);
+  border-radius: 16px;
+  width: 373px;
+  height: 411px;
+}
+
+.offer-img {
+  width: 293px;
+  height: 200px;
+  padding: 40px 40px 20px 40px;
+  
+}
+
+.offer-title {
+  font-weight: 700;
+  text-align: center;
+  
+  }
+
+.buy-btn {
+  background-color: var(--accent-magenta);
+  border: none;
+  border-radius: 24px;
+  color: var(--white);
+  width: 147px;
+  height: 48px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+/* ----------footer---------- */
+footer {
+  height: 200px;
+  
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  align-items: center;
+  margin:0 -15% 0 -15%;
+  flex-direction: column;
+}
+
+.footer-bottom {
+  display: flex;
+}
+
+.social-media {
+  margin: 19px 12px 0 12px;
+}
+
+@media screen and (max-width: 834px) {
+  .banner {
+    padding-top: 20px;
+    padding-bottom: 150px;
+     display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .banner-left {
+    width: 450px;
+    height: 310px;
+    display: flex;
+    padding-top: 0px;
+  }
+
+  .banner-input {
+    width: 223px;
+  }
+
+  .illustration {
+    width: 265px;
+    height: 212px;
+    padding-top: 80px;
+  }
+}

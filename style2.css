@@ -1,0 +1,222 @@
+:root {
+  --white: #FFFFFF;
+  --dark: #1D1C1C;
+  --card: #F6F2EF;
+  --accent-magenta: #FF5678;
+  --accent-green: #149770;
+  --text-secondary: #787878;
+}
+
+h1, h2 {
+ font-family: 'Nunito', sans-serif;
+}
+
+p, a {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* Add styles here */
+
+
+/* ----- navigation bar ----- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+
+.nav-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.nav-item {
+  margin: 15px;
+}
+
+.nav-btn {
+  background-color: var(--accent-magenta);
+  color: var(--white);
+  font-family: 'Nunito Sans';
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 24px;
+  width: 70;
+  height: 16;
+  border: none;
+  padding: 8px 25px 8px 25px;
+  letter-spacing: 3px;
+  line-height: 24px;
+  
+}
+
+
+.main-container {
+  marign: 20px 0 20px 0;
+  
+}
+
+.selection-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px 0 20px 0;
+}
+
+.selection-container-right {
+  display: flex;
+  align-items: center;
+}
+
+.sort {
+  margin-right: 24px;
+  font-weight: 700;
+}
+
+.price-menu {
+  display: flex;
+  align-items: center;
+  padding: 12px 50px 12px 24px;
+  background-color: var(--card);
+  border: 2px none;
+  border-radius: 24px;
+  margin-right: 20px;
+}
+
+.price-2 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+.arrow-2 {
+  width: 14px;
+  height: 8.8px;
+  position: relative;
+  right: -30px;
+}
+/* ----- Special offers ----- */
+
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  margin-bottom: 120px;
+}
+ 
+
+.special-offer-title {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 20px 12px 0px;
+  
+  background-color: var(--card);
+  border-radius: 16px;
+  width: 373px;
+  height: 476px;
+}
+
+.offer-img {
+  width: 293px;
+  height: 200px;
+  padding: 40px 40px 10px 40px;
+  
+}
+.availability-container {
+  display: relative;
+}
+.availability {
+  color: var(--white);
+  background-color: var(--accent-green);
+  padding: 5px 15px 5px 20px;
+  border-radius: 25px 0 0 25px;
+  width: 85px;
+  height: 17px;
+  position: relative;
+  top: -225px;
+  right: -251px;
+}
+
+.offer-title-price {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.offer-title {
+  font-weight: 700;
+  text-align: center;
+  margin-right:50px;
+  }
+
+.origin {
+  position: relative;
+  Right: 120px;
+  font-weight: lighter;
+  line-height: 32px;
+}
+.buy-btn {
+  background-color: var(--accent-magenta);
+  border: none;
+  border-radius: 24px;
+  color: var(--white);
+  width: 147px;
+  height: 48px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+/* ----------footer---------- */
+footer {
+  height: 200px;
+  
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  align-items: center;
+  margin:0 -15% 0 -15%;
+  flex-direction: column;
+}
+
+.footer-bottom {
+  display: flex;
+}
+
+.social-media {
+  margin: 19px 12px 0 12px;
+}
+
+@media screen and (max-width: 834px) {
